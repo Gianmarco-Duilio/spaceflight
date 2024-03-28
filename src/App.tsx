@@ -4,8 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FetchArticles from "./Components/FetchArticles";
 import NavbarArticle from "./Components/Navabar";
 import ArticleDetails from "./Components/ArticleDetails";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

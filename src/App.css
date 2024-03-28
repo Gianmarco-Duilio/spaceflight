@@ -1,0 +1,15 @@
+#bodyCard {
+  border-radius: 30px;
+  -webkit-box-shadow: -1px 14px 21px 0px rgba(255, 251, 251, 0.74);
+  -moz-box-shadow: -1px 14px 21px 0px rgba(255, 255, 255, 0.815);
+  box-shadow: -1px 14px 21px 0px rgba(255, 253, 253, 0.767);
+  border: none;
+  background-color: #212529;
+  color: white;
+}
+body {
+  background-color: #000000 !important;
+}
+#CardImg {
+  border-radius: 30px;
+}

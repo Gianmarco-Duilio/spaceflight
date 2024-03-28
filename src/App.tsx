@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import FetchArticles from "./Components/FetchArticles";
+import NavbarArticle from "./Components/Navabar";
+import ArticleDetails from "./Components/ArticleDetails";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <NavbarArticle />
+        <Routes>
+          <Route path="/" element={<FetchArticles />} />
+
+          <Route path="/details/:articleId" element={<ArticleDetails />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
